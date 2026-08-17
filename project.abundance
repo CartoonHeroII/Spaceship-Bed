@@ -471,18 +471,6 @@
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
-        },
-        {
-          "atomType": "Circle",
-          "x": 0.20195312499999998,
-          "y": 0.7252931323283082,
-          "uniqueID": "id-244",
-          "ioValues": [
-            {
-              "name": "diameter",
-              "ioValue": 10
-            }
-          ]
         }
       ],
       "allConnectors": [
@@ -601,6 +589,65 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.35781250000000003,
+      "y": 0.8224455611390284,
+      "uniqueID": "id-247",
+      "name": "Side-Window",
+      "ioValues": [
+        {
+          "name": "Side_Thickness",
+          "ioValue": 10
+        },
+        {
+          "name": "Side_Width",
+          "ioValue": 10
+        },
+        {
+          "name": "Side_Height",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-249",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-251",
+          "name": "Side_Thickness"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-254",
+          "name": "Side_Width"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-257",
+          "name": "Side_Height"
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
