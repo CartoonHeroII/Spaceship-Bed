@@ -10,12 +10,12 @@
       "ioValue": 0.75
     },
     {
-      "name": "Plywood_Width",
+      "name": "Plywood_Length",
       "ioValue": 96,
       "currentEquation": "96"
     },
     {
-      "name": "Plywood_Height",
+      "name": "Plywood_Width",
       "ioValue": 48,
       "currentEquation": "48"
     },
@@ -77,14 +77,14 @@
       "x": 0.025384615384615384,
       "y": 0.24615384615384617,
       "uniqueID": "id-75",
-      "name": "Plywood_Width"
+      "name": "Plywood_Length"
     },
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.3384615384615385,
+      "y": 0.33668341708542715,
       "uniqueID": "id-78",
-      "name": "Plywood_Height"
+      "name": "Plywood_Width"
     },
     {
       "atomType": "Extrude",
@@ -282,8 +282,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.39375000000000004,
-      "y": 0.1390284757118928,
+      "x": 0.41015624999999994,
+      "y": 0.18257956448911222,
       "uniqueID": "id-158",
       "ioValues": [
         {
@@ -292,8 +292,8 @@
         },
         {
           "name": "xDist",
-          "ioValue": 25.25,
-          "currentEquation": "Mattress_Length/2-Plywood_Thickness"
+          "ioValue": 22,
+          "currentEquation": "22"
         },
         {
           "name": "yDist",
