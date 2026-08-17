@@ -58,17 +58,19 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.17109375000000002,
-      "y": 0.3316582914572864,
+      "x": 0.21406250000000002,
+      "y": 0.1390284757118928,
       "uniqueID": "id-71",
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 96
+          "ioValue": 55,
+          "currentEquation": "Mattress_Length+Plywood_Thickness*4"
         },
         {
           "name": "y length",
-          "ioValue": 48
+          "ioValue": 31,
+          "currentEquation": "Mattress_Width+Plywood_Thickness*4"
         }
       ]
     },
@@ -292,8 +294,8 @@
         },
         {
           "name": "xDist",
-          "ioValue": 22,
-          "currentEquation": "22"
+          "ioValue": 0,
+          "currentEquation": "0"
         },
         {
           "name": "yDist",
@@ -321,16 +323,6 @@
       "ap2Name": "geometry",
       "ap1ID": "id-71",
       "ap2ID": "id-81"
-    },
-    {
-      "ap2Name": "x length",
-      "ap1ID": "id-75",
-      "ap2ID": "id-71"
-    },
-    {
-      "ap2Name": "y length",
-      "ap1ID": "id-78",
-      "ap2ID": "id-71"
     },
     {
       "ap2Name": "geometry",
