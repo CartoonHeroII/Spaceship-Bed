@@ -7,8 +7,8 @@
 ## Inputs
 
 - **Plywood_Thickness** (number)
+- **Plywood_Length** (number)
 - **Plywood_Width** (number)
-- **Plywood_Height** (number)
 - **Mattress_Width** (undefined)
 - **Mattress_Length** (undefined)
 - **Matress_Thickness** (undefined)
