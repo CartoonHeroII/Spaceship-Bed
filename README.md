@@ -14,6 +14,7 @@
 - **Matress_Thickness** (undefined)
 - **Frame_Width** (number)
 - **Frame_Height** (number)
+- **Frame_Bed_Length** (number)
 
 
 
