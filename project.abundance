@@ -33,6 +33,10 @@
       "name": "Matress_Thickness",
       "ioValue": 6,
       "currentEquation": "6"
+    },
+    {
+      "name": "Input",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -306,6 +310,71 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.241796875,
+      "y": 0.8458961474036851,
+      "uniqueID": "id-181",
+      "name": "Back",
+      "ioValues": [
+        {
+          "name": "Back_Thickness",
+          "ioValue": 0.75
+        },
+        {
+          "name": "Back_Width",
+          "ioValue": 10
+        },
+        {
+          "name": "Back_Height",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-183",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-185",
+          "name": "Back_Thickness"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-188",
+          "name": "Back_Width"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-191",
+          "name": "Back_Height"
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.7120731864450458,
+      "uniqueID": "id-194"
     }
   ],
   "allConnectors": [
@@ -318,6 +387,11 @@
       "ap2Name": "zDist",
       "ap1ID": "id-65",
       "ap2ID": "id-128"
+    },
+    {
+      "ap2Name": "Back_Thickness",
+      "ap1ID": "id-65",
+      "ap2ID": "id-181"
     },
     {
       "ap2Name": "geometry",
