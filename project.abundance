@@ -599,15 +599,15 @@
       "ioValues": [
         {
           "name": "Side_Thickness",
-          "ioValue": 10
+          "ioValue": 0.75
         },
         {
           "name": "Side_Width",
-          "ioValue": 10
+          "ioValue": 31
         },
         {
           "name": "Side_Height",
-          "ioValue": 10
+          "ioValue": 36
         }
       ],
       "topLevel": false,
@@ -644,9 +644,184 @@
           "y": 0.3384615384615385,
           "uniqueID": "id-257",
           "name": "Side_Height"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.154296875,
+          "y": 0.3132328308207705,
+          "uniqueID": "id-260",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 31
+            },
+            {
+              "name": "y length",
+              "ioValue": 36
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.259765625,
+          "y": 0.304857621440536,
+          "uniqueID": "id-264",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 0.75
+            }
+          ]
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-251",
+          "ap2ID": "id-264"
+        },
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-254",
+          "ap2ID": "id-260"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-257",
+          "ap2ID": "id-260"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-260",
+          "ap2ID": "id-264"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-264",
+          "ap2ID": "id-249"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.46679687500000006,
+      "y": 0.7370184254606365,
+      "uniqueID": "id-258",
+      "name": "Side-Window",
+      "ioValues": [
+        {
+          "name": "Side_Thickness",
+          "ioValue": 0.75
+        },
+        {
+          "name": "Side_Height",
+          "ioValue": 36
+        },
+        {
+          "name": "Side_Length",
+          "ioValue": 55
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-260",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-262",
+          "name": "Side_Thickness"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-265",
+          "name": "Side_Height"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-268",
+          "name": "Side_Length"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.20898437500000003,
+          "y": 0.47068676716917923,
+          "uniqueID": "id-271",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 55
+            },
+            {
+              "name": "y length",
+              "ioValue": 36
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.321484375,
+          "y": 0.45728643216080406,
+          "uniqueID": "id-275",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 0.75
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-262",
+          "ap2ID": "id-275"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-265",
+          "ap2ID": "id-271"
+        },
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-268",
+          "ap2ID": "id-271"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-271",
+          "ap2ID": "id-275"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-275",
+          "ap2ID": "id-260"
+        }
+      ],
       "fileTypeVersion": 1
     }
   ],
@@ -665,6 +840,16 @@
       "ap2Name": "Back_Thickness",
       "ap1ID": "id-65",
       "ap2ID": "id-181"
+    },
+    {
+      "ap2Name": "Side_Thickness",
+      "ap1ID": "id-65",
+      "ap2ID": "id-247"
+    },
+    {
+      "ap2Name": "Side_Thickness",
+      "ap1ID": "id-65",
+      "ap2ID": "id-258"
     },
     {
       "ap2Name": "geometry",
@@ -727,9 +912,24 @@
       "ap2ID": "id-71"
     },
     {
+      "ap2Name": "Side_Width",
+      "ap1ID": "id-194",
+      "ap2ID": "id-247"
+    },
+    {
       "ap2Name": "Back_Height",
       "ap1ID": "id-197",
       "ap2ID": "id-181"
+    },
+    {
+      "ap2Name": "Side_Height",
+      "ap1ID": "id-197",
+      "ap2ID": "id-247"
+    },
+    {
+      "ap2Name": "Side_Height",
+      "ap1ID": "id-197",
+      "ap2ID": "id-258"
     },
     {
       "ap2Name": "Shape 3",
@@ -740,6 +940,11 @@
       "ap2Name": "x length",
       "ap1ID": "id-215",
       "ap2ID": "id-71"
+    },
+    {
+      "ap2Name": "Side_Length",
+      "ap1ID": "id-215",
+      "ap2ID": "id-258"
     },
     {
       "ap2Name": "geometry",
