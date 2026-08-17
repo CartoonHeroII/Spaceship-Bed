@@ -1,13 +1,40 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-60",
-    "name": "Spaceship-Bed",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Inches",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-60",
+  "name": "Spaceship-Bed",
+  "ioValues": [
+    {
+      "name": "Plywood_Thickness",
+      "ioValue": 0.75,
+      "currentEquation": "0.75"
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-61",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.15384615384615385,
+      "uniqueID": "id-65",
+      "name": "Plywood_Thickness"
+    }
+  ],
+  "allConnectors": [],
+  "unitsKey": "Inches",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
