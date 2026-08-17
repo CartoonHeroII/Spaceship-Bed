@@ -9,9 +9,9 @@
 - **Plywood_Thickness** (number)
 - **Plywood_Width** (number)
 - **Plywood_Height** (number)
-- **Mattress_Width** (number)
-- **Mattress_Length** (number)
-- **Matress_Thickness** (number)
+- **Mattress_Width** (undefined)
+- **Mattress_Length** (undefined)
+- **Matress_Thickness** (undefined)
 
 
 
