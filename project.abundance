@@ -470,7 +470,7 @@
         {
           "name": "xDist",
           "ioValue": -27.5,
-          "currentEquation": "-27.5"
+          "currentEquation": "-Frame_Bed_Length/2"
         },
         {
           "name": "yDist",
