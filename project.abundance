@@ -459,8 +459,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.3375,
-      "y": 0.8257956448911222,
+      "x": 0.263671875,
+      "y": 0.8442211055276382,
       "uniqueID": "id-208",
       "ioValues": [
         {
@@ -479,7 +479,8 @@
         },
         {
           "name": "zDist",
-          "ioValue": 0.75
+          "ioValue": 18.75,
+          "currentEquation": "Frame_Height/2+Plywood_Thickness"
         }
       ]
     },
@@ -514,31 +515,6 @@
           "ioValue": 0
         }
       ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.283203125,
-      "y": 0.8877721943048575,
-      "uniqueID": "id-224",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 18,
-          "currentEquation": "Frame_Height/2"
-        }
-      ]
     }
   ],
   "allConnectors": [
@@ -556,11 +532,6 @@
       "ap2Name": "Back_Thickness",
       "ap1ID": "id-65",
       "ap2ID": "id-181"
-    },
-    {
-      "ap2Name": "zDist",
-      "ap1ID": "id-65",
-      "ap2ID": "id-208"
     },
     {
       "ap2Name": "geometry",
@@ -640,11 +611,6 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-218",
-      "ap2ID": "id-224"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-224",
       "ap2ID": "id-208"
     }
   ],
