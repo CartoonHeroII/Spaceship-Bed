@@ -12,6 +12,7 @@
 - **Mattress_Width** (undefined)
 - **Mattress_Length** (undefined)
 - **Matress_Thickness** (undefined)
+- **Input** (number)
 
 
 
