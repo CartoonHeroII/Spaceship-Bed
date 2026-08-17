@@ -43,6 +43,11 @@
       "name": "Frame_Height",
       "ioValue": 36,
       "currentEquation": "36"
+    },
+    {
+      "name": "Frame_Bed_Length",
+      "ioValue": 55,
+      "currentEquation": "Mattress_Length+Plywood_Thickness*4"
     }
   ],
   "topLevel": true,
@@ -147,6 +152,10 @@
         },
         {
           "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
           "ioValue": null
         }
       ]
@@ -447,6 +456,39 @@
       "y": 0.8043808787527381,
       "uniqueID": "id-197",
       "name": "Frame_Height"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.3375,
+      "y": 0.8257956448911222,
+      "uniqueID": "id-208",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -27.5,
+          "currentEquation": "-27.5"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.8966885710604304,
+      "uniqueID": "id-215",
+      "name": "Frame_Bed_Length"
     }
   ],
   "allConnectors": [
@@ -511,9 +553,9 @@
       "ap2ID": "id-123"
     },
     {
-      "ap2Name": "y length",
-      "ap1ID": "id-194",
-      "ap2ID": "id-71"
+      "ap2Name": "geometry",
+      "ap1ID": "id-181",
+      "ap2ID": "id-208"
     },
     {
       "ap2Name": "Back_Width",
@@ -521,9 +563,24 @@
       "ap2ID": "id-181"
     },
     {
+      "ap2Name": "y length",
+      "ap1ID": "id-194",
+      "ap2ID": "id-71"
+    },
+    {
       "ap2Name": "Back_Height",
       "ap1ID": "id-197",
       "ap2ID": "id-181"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-208",
+      "ap2ID": "id-123"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-215",
+      "ap2ID": "id-71"
     }
   ],
   "unitsKey": "Inches",
