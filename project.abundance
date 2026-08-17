@@ -469,8 +469,8 @@
         },
         {
           "name": "xDist",
-          "ioValue": -27.5,
-          "currentEquation": "-Frame_Bed_Length/2"
+          "ioValue": -27.125,
+          "currentEquation": "-27.125"
         },
         {
           "name": "yDist",
@@ -479,7 +479,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": 0
+          "ioValue": 0.75
         }
       ]
     },
@@ -506,6 +506,11 @@
       "ap2Name": "Back_Thickness",
       "ap1ID": "id-65",
       "ap2ID": "id-181"
+    },
+    {
+      "ap2Name": "zDist",
+      "ap1ID": "id-65",
+      "ap2ID": "id-208"
     },
     {
       "ap2Name": "geometry",
