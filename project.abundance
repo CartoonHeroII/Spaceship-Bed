@@ -970,6 +970,215 @@
           "currentEquation": "Frame_Height/2+Plywood_Thickness"
         }
       ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.491796875,
+      "y": 0.8676716917922948,
+      "uniqueID": "id-332",
+      "name": "Side-Entrance",
+      "ioValues": [
+        {
+          "name": "Side_Thickness",
+          "ioValue": 0.75
+        },
+        {
+          "name": "Side_Height",
+          "ioValue": 36
+        },
+        {
+          "name": "Side_Length",
+          "ioValue": 55
+        },
+        {
+          "name": "Entrance_Width",
+          "ioValue": 10
+        },
+        {
+          "name": "Entrance_Height",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-333",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-334",
+          "name": "Side_Thickness"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-335",
+          "name": "Side_Height"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-336",
+          "name": "Side_Length"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.189453125,
+          "y": 0.48408710217755446,
+          "uniqueID": "id-337",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 55
+            },
+            {
+              "name": "y length",
+              "ioValue": 36
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.487109375,
+          "y": 0.4254606365159129,
+          "uniqueID": "id-338",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 0.75
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.190234375,
+          "y": 0.6314907872696818,
+          "uniqueID": "id-340",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 12,
+              "currentEquation": "Side_Height/3"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.26796875000000003,
+          "y": 0.6281407035175879,
+          "uniqueID": "id-342",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": -18.333333333333332,
+              "currentEquation": "-Side_Length/3"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 6,
+              "currentEquation": "Side_Height/6"
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.33671875,
+          "y": 0.6113902847571189,
+          "uniqueID": "id-345",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.4307692307692308,
+          "uniqueID": "id-394",
+          "name": "Entrance_Width"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.5230769230769231,
+          "uniqueID": "id-397",
+          "name": "Entrance_Height"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-334",
+          "ap2ID": "id-338"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-335",
+          "ap2ID": "id-337"
+        },
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-336",
+          "ap2ID": "id-337"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-337",
+          "ap2ID": "id-345"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-338",
+          "ap2ID": "id-333"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-340",
+          "ap2ID": "id-342"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-342",
+          "ap2ID": "id-345"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-345",
+          "ap2ID": "id-338"
+        }
+      ],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -992,6 +1201,11 @@
       "ap2Name": "Side_Thickness",
       "ap1ID": "id-65",
       "ap2ID": "id-258"
+    },
+    {
+      "ap2Name": "Side_Thickness",
+      "ap1ID": "id-65",
+      "ap2ID": "id-332"
     },
     {
       "ap2Name": "geometry",
@@ -1064,6 +1278,11 @@
       "ap2ID": "id-258"
     },
     {
+      "ap2Name": "Side_Height",
+      "ap1ID": "id-197",
+      "ap2ID": "id-332"
+    },
+    {
       "ap2Name": "Shape 3",
       "ap1ID": "id-208",
       "ap2ID": "id-123"
@@ -1077,6 +1296,11 @@
       "ap2Name": "Side_Length",
       "ap1ID": "id-215",
       "ap2ID": "id-258"
+    },
+    {
+      "ap2Name": "Side_Length",
+      "ap1ID": "id-215",
+      "ap2ID": "id-332"
     },
     {
       "ap2Name": "geometry",
