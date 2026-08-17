@@ -328,8 +328,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.151171875,
-      "y": 0.8408710217755444,
+      "x": 0.15312499999999998,
+      "y": 0.8375209380234506,
       "uniqueID": "id-181",
       "name": "Back",
       "ioValues": [
@@ -399,8 +399,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.248046875,
-          "y": 0.2897822445561139,
+          "x": 0.39375000000000004,
+          "y": 0.3668341708542714,
           "uniqueID": "id-204",
           "ioValues": [
             {
@@ -443,8 +443,8 @@
             },
             {
               "name": "xDist",
-              "ioValue": 6,
-              "currentEquation": "Back_Height/6"
+              "ioValue": -6,
+              "currentEquation": "-Back_Height/6"
             },
             {
               "name": "yDist",
@@ -453,6 +453,34 @@
             {
               "name": "zDist",
               "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.329296875,
+          "y": 0.5125628140703518,
+          "uniqueID": "id-240",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.20195312499999998,
+          "y": 0.7252931323283082,
+          "uniqueID": "id-244",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
             }
           ]
         }
@@ -474,9 +502,9 @@
           "ap2ID": "id-200"
         },
         {
-          "ap2Name": "geometry",
+          "ap2Name": "retain",
           "ap1ID": "id-200",
-          "ap2ID": "id-204"
+          "ap2ID": "id-240"
         },
         {
           "ap2Name": "number or geometry",
@@ -487,6 +515,16 @@
           "ap2Name": "geometry",
           "ap1ID": "id-230",
           "ap2ID": "id-234"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-234",
+          "ap2ID": "id-240"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-240",
+          "ap2ID": "id-204"
         }
       ],
       "fileTypeVersion": 1
