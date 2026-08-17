@@ -119,41 +119,9 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.6153846153846154,
+      "y": 0.6365159128978224,
       "uniqueID": "id-97",
       "name": "Matress_Thickness"
-    },
-    {
-      "atomType": "Rectangle",
-      "x": 0.154296875,
-      "y": 0.5477386934673367,
-      "uniqueID": "id-115",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 52
-        },
-        {
-          "name": "y length",
-          "ioValue": 28
-        }
-      ]
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.323046875,
-      "y": 0.5996649916247906,
-      "uniqueID": "id-119",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "height",
-          "ioValue": 6
-        }
-      ]
     },
     {
       "atomType": "Assembly",
@@ -173,8 +141,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.40859375,
-      "y": 0.5293132328308208,
+      "x": 0.32734375,
+      "y": 0.6180904522613065,
       "uniqueID": "id-128",
       "ioValues": [
         {
@@ -194,6 +162,123 @@
           "ioValue": 0.75
         }
       ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.248046875,
+      "y": 0.626465661641541,
+      "uniqueID": "id-134",
+      "name": "Toddler-Mattress",
+      "ioValues": [
+        {
+          "name": "Mattress_Width",
+          "ioValue": 28
+        },
+        {
+          "name": "Mattress_Length",
+          "ioValue": 52
+        },
+        {
+          "name": "Matress_Thickness",
+          "ioValue": 6
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-136",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-138",
+          "name": "Mattress_Width"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-139",
+          "name": "Mattress_Length"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-140",
+          "name": "Matress_Thickness"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.204296875,
+          "y": 0.49773869346733673,
+          "uniqueID": "id-141",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 52
+            },
+            {
+              "name": "y length",
+              "ioValue": 28
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.38671875,
+          "y": 0.762395309882747,
+          "uniqueID": "id-142",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 6
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-138",
+          "ap2ID": "id-141"
+        },
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-139",
+          "ap2ID": "id-141"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-140",
+          "ap2ID": "id-142"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-141",
+          "ap2ID": "id-142"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-142",
+          "ap2ID": "id-136"
+        }
+      ],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -228,29 +313,19 @@
       "ap2ID": "id-123"
     },
     {
-      "ap2Name": "y length",
+      "ap2Name": "Mattress_Width",
       "ap1ID": "id-85",
-      "ap2ID": "id-115"
+      "ap2ID": "id-134"
     },
     {
-      "ap2Name": "x length",
+      "ap2Name": "Mattress_Length",
       "ap1ID": "id-88",
-      "ap2ID": "id-115"
+      "ap2ID": "id-134"
     },
     {
-      "ap2Name": "height",
+      "ap2Name": "Matress_Thickness",
       "ap1ID": "id-97",
-      "ap2ID": "id-119"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-115",
-      "ap2ID": "id-119"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-119",
-      "ap2ID": "id-128"
+      "ap2ID": "id-134"
     },
     {
       "ap2Name": "number or geometry",
@@ -261,6 +336,11 @@
       "ap2Name": "Shape 2",
       "ap1ID": "id-128",
       "ap2ID": "id-123"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-134",
+      "ap2ID": "id-128"
     }
   ],
   "unitsKey": "Inches",
