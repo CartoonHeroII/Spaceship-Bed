@@ -35,8 +35,14 @@
       "currentEquation": "6"
     },
     {
-      "name": "Input",
-      "ioValue": 10
+      "name": "Frame_Width",
+      "ioValue": 31,
+      "currentEquation": "Mattress_Width+Plywood_Thickness*4"
+    },
+    {
+      "name": "Frame_Height",
+      "ioValue": 36,
+      "currentEquation": "36"
     }
   ],
   "topLevel": true,
@@ -313,8 +319,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.241796875,
-      "y": 0.8458961474036851,
+      "x": 0.24257812500000003,
+      "y": 0.8375209380234506,
       "uniqueID": "id-181",
       "name": "Back",
       "ioValues": [
@@ -324,11 +330,11 @@
         },
         {
           "name": "Back_Width",
-          "ioValue": 10
+          "ioValue": 31
         },
         {
           "name": "Back_Height",
-          "ioValue": 10
+          "ioValue": 36
         }
       ],
       "topLevel": false,
@@ -365,16 +371,82 @@
           "y": 0.3384615384615385,
           "uniqueID": "id-191",
           "name": "Back_Height"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.16953125,
+          "y": 0.22110552763819097,
+          "uniqueID": "id-200",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 0.75
+            },
+            {
+              "name": "y length",
+              "ioValue": 31
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.26171875,
+          "y": 0.31658291457286436,
+          "uniqueID": "id-204",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 36
+            }
+          ]
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-185",
+          "ap2ID": "id-200"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-188",
+          "ap2ID": "id-200"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-191",
+          "ap2ID": "id-204"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-200",
+          "ap2ID": "id-204"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-204",
+          "ap2ID": "id-183"
+        }
+      ],
       "fileTypeVersion": 1
     },
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
       "y": 0.7120731864450458,
-      "uniqueID": "id-194"
+      "uniqueID": "id-194",
+      "name": "Frame_Width"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.8043808787527381,
+      "uniqueID": "id-197",
+      "name": "Frame_Height"
     }
   ],
   "allConnectors": [
@@ -437,6 +509,21 @@
       "ap2Name": "Shape 1",
       "ap1ID": "id-158",
       "ap2ID": "id-123"
+    },
+    {
+      "ap2Name": "y length",
+      "ap1ID": "id-194",
+      "ap2ID": "id-71"
+    },
+    {
+      "ap2Name": "Back_Width",
+      "ap1ID": "id-194",
+      "ap2ID": "id-181"
+    },
+    {
+      "ap2Name": "Back_Height",
+      "ap1ID": "id-197",
+      "ap2ID": "id-181"
     }
   ],
   "unitsKey": "Inches",
