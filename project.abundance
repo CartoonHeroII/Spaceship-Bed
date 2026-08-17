@@ -186,8 +186,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.13945312499999998,
-      "y": 0.52428810720268,
+      "x": 0.140625,
+      "y": 0.6482412060301507,
       "uniqueID": "id-134",
       "name": "Toddler-Mattress",
       "ioValues": [
