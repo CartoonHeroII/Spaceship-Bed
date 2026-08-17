@@ -328,8 +328,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.24257812500000003,
-      "y": 0.8375209380234506,
+      "x": 0.151171875,
+      "y": 0.8408710217755444,
       "uniqueID": "id-181",
       "name": "Back",
       "ioValues": [
@@ -389,7 +389,7 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 0.75
+              "ioValue": 36
             },
             {
               "name": "y length",
@@ -409,16 +409,16 @@
             },
             {
               "name": "height",
-              "ioValue": 36
+              "ioValue": 0.75
             }
           ]
         }
       ],
       "allConnectors": [
         {
-          "ap2Name": "x length",
+          "ap2Name": "height",
           "ap1ID": "id-185",
-          "ap2ID": "id-200"
+          "ap2ID": "id-204"
         },
         {
           "ap2Name": "y length",
@@ -426,9 +426,9 @@
           "ap2ID": "id-200"
         },
         {
-          "ap2Name": "height",
+          "ap2Name": "x length",
           "ap1ID": "id-191",
-          "ap2ID": "id-204"
+          "ap2ID": "id-200"
         },
         {
           "ap2Name": "geometry",
@@ -469,8 +469,8 @@
         },
         {
           "name": "xDist",
-          "ioValue": -27.125,
-          "currentEquation": "-27.125"
+          "ioValue": -27.5,
+          "currentEquation": "-27.5"
         },
         {
           "name": "yDist",
@@ -489,6 +489,56 @@
       "y": 0.8966885710604304,
       "uniqueID": "id-215",
       "name": "Frame_Bed_Length"
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.1984375,
+      "y": 0.8492462311557789,
+      "uniqueID": "id-218",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.283203125,
+      "y": 0.8877721943048575,
+      "uniqueID": "id-224",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 18,
+          "currentEquation": "Frame_Height/2"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -560,7 +610,7 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-181",
-      "ap2ID": "id-208"
+      "ap2ID": "id-218"
     },
     {
       "ap2Name": "Back_Width",
@@ -586,6 +636,16 @@
       "ap2Name": "x length",
       "ap1ID": "id-215",
       "ap2ID": "id-71"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-218",
+      "ap2ID": "id-224"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-224",
+      "ap2ID": "id-208"
     }
   ],
   "unitsKey": "Inches",
